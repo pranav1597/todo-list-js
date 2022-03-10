@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { margin-top:20px; font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="light">
+  
+  <div class="container">
+    
+    <div class="header">
+      
+      <div class="header-flex">
+        <h1 class="title">TODO</h1>
+      </div>
+      
+      <div class="header-flex toggle">
+        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-toggle" checked>
+        <div class="toggle-logo"></div>
+      </div>
+
+    </div>
+    <!-- end of header -->
+
+    <div class="create-todo">
+      <div class="check">
+        <div class="check-mark"></div>
+      </div>
+
+      <form action="" onsubmit="addItem(event)">
+        <input type="text" placeholder="Create a new todo" class="create_todo-input">
+      </form>
+      
+    </div>
+
+    <!-- end of create-todo -->
+    
+    <div class="todo-list">
+      
+      <div class="todo-items">
+        
+      
+        
+       
+        <!-- end of todo-item -->
+
+      </div>
+      <!-- end of todo-items -->
+
+      <div class="todo-items--status">
+        
+        <div class="items-rem">
+          
+        </div>
+        
+        <div class="clear-complete">
+          Clear completed
+        </div>
+          
+      </div>
+      <!-- end of items status -->
+        
+      
+    </div>
+
+      <!-- end of todo-list  -->
+      
+      
+      <div class="todo-list--category">
+        <div class="category-flex">
+          <span class="all">All</span>
+        </div>
+        <div class="category-flex">
+          <span class="active">Active</span>
+        </div>
+        <div class="category-flex">
+          <span class="completed">Completed</span>
+        </div>
+      </div>
+      <!--end of todo-list--category -->
+
+      <div class="drag">
+        Drag and drop to reorder list
+      </div>
+
+  </div>
+  <!-- end of container -->
+  
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/pranav1597/todo-list-firebase" target="_blank">Pranav</a>.
+  </div>
+  
+  
+  
+  
+  
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+      <script src="firebase.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js" integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="script.js"></script>
+      
+</body>
+</html>
