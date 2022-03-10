@@ -76,7 +76,7 @@ function displayItems(items){
         
         <div class="check">
         <div data-id=${item.id} class="check-mark ${item.status === "completed" ? "checked" : ""} ">
-        ${item.status === "completed" ? '<img src="images/icon-check.svg" alt=""></img>' : ""}
+        ${item.status === "completed" ? '<img src="./images/icon-check.svg" alt="check-mark"></img>' : ""}
                     
                 </div>
                 </div>
@@ -86,7 +86,7 @@ function displayItems(items){
                 </div>
                 
                 <div data-id=${item.id} class="delete-item">
-                <img src="images/icon-cross.svg" alt="del-icon"></img>
+                <img src="./images/icon-cross.svg" alt="del-icon"></img>
                 </div>
                 
                 </div>
