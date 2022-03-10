@@ -160,7 +160,6 @@ body{
 }
 
 .create-todo{
-    /* outline: 1px solid black; */
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -212,6 +211,10 @@ body{
 .checkbox-todo{
     opacity: 0;
     position: absolute;
+}
+
+form{
+    width: 100%;
 }
 
 
